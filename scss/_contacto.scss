@@ -1,0 +1,74 @@
+
+.cajaContacto{
+    margin: 2em auto;
+
+    span{
+        @include cajasFormularios ($verde, $verde, $oscuro);
+        color: $muyClaro;
+        
+    }
+
+    input, textarea, option, select{
+        @include cajasFormularios($borde1, $claro, $oscuro);
+        
+    }
+
+    button{
+        @extend .botonBuscar;
+        font-weight: bold;
+        margin: 1.8em auto;
+    }
+
+    .seccionCheck{
+        margin: 1.5em auto;
+    }
+
+   
+    .cajaComentario{
+        height: 10em;
+        width: auto;
+
+
+        @media screen and (max-width: 500px) {
+           
+            textarea{
+                width: auto;
+                height: auto;
+             }
+
+            flex-direction: column;
+            
+        }
+
+    }
+
+}
+
+.seccionMapa{
+    margin: 1em 1em 2em 1em;
+    
+
+    iframe{
+        margin: 1em;
+        width: 32em;
+        height: 25em;
+        
+        @media screen and (max-width: 992px) {
+            width: 20em;
+            height: 15em;
+        }
+
+        @media screen and (max-width: 400px) {
+            width: 15em;
+            height: 10em;
+            
+        }
+    }
+
+    p{
+        margin: 0.1em 1em;
+    }
+    
+}
+
+    
